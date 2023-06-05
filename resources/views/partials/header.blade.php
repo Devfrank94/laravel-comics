@@ -1,18 +1,23 @@
+@php
+// salvo in variabile array che si trova in menus.php
+  $head_menu = config('menus.header_menu');
+@endphp
+
 <div class="container">
     <header class="d-flex j-cont-bet al-item-cent">
       <div class="logo">
-        <img src="{{ Vite::asset('public/dc-logo.png') }}" alt="">
+        <img src="{{ Vite::asset('public/dc-logo.png') }}" alt="DC Logo">
       </div>
       <nav>
         <ul class="d-flex">
-            <li><a href="">dsfs</a></li>
-            <li><a href="">dfsfds</a></li>
-            <li><a href="">dsfs</a></li>
-            <li><a href="">dsf</a></li>
-            <li><a href="">sdfds</a></li>
-          {{-- <li v-for="(link, index) in mainMenu" :key="index">
-            <a :href="link.href" :class="{'active' : link.isActive}">{{link.text}}</a>
-          </li> --}}
+        @foreach ($head_menu as $item)
+            <li>
+            <a
+            href="{{route($item['href'])}}" {{Route::currentRouteName() === $item['href'] ? 'active' : ''}}>
+                {{$item['text']}}
+            </a>
+            </li>
+        @endforeach
         </ul>
       </nav>
     </header>
