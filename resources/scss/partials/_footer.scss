@@ -1,0 +1,138 @@
+@use './vars' as *;
+
+footer{
+
+    .background-top{
+      background-color: $fmcyan;
+    }
+
+    .background-center{
+      background-image: url('/resources/img/footer-bg.jpg');
+      height: 370px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .container{
+        height: 100%;
+
+        .categories{
+
+          margin: 2.5rem 0;
+
+          .col{
+
+            margin: .8rem;
+
+            li{
+
+            a{
+            color: $fmgray;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            &:hover{
+                color: $fmcyan;
+            }
+            }
+
+        }
+
+        h4{
+        color: $fmwhite;
+        text-transform: uppercase;
+        margin: .6rem 0;
+        }
+
+        }
+
+    }
+
+
+    }
+
+    .right{
+    background-image: url("/resources/img/dc-logo-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 370px;
+}
+
+
+
+  }
+
+    .background-bottom{
+      background-color: $fmdargray;
+      height: 70px;
+
+      .container{
+        height: 100%;
+
+        .foot-bott-left{
+
+          span{
+            text-transform: uppercase;
+            color: $fmwhite;
+            border: 2px solid $fmcyan;
+            padding: .5rem;
+            font-size: .8rem;
+            font-weight: 500;
+          }
+
+        }
+
+        .foot-bott-right{
+          height: 100%;
+
+          span{
+            text-transform: uppercase;
+            color: $fmcyan;
+            font-size: 1.1rem;
+            font-weight: 800;
+          }
+
+          nav{
+              height: 100%;
+            ul{
+              margin-left: 25px;
+              li{
+                margin-right: 10px;
+
+                img{
+                  width: 1.7rem;
+                }
+
+                a:hover{
+                  transition: all .3s;
+                  filter: brightness(50%);
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .blue-section{
+    height: 100px;
+    padding: 1rem ;
+
+    img{
+      min-width: 30px;
+      max-width: 40px;
+      margin: .7rem;
+    }
+
+    span{
+      color: $fmwhite;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: .7rem;
+      white-space: nowrap;
+    }
+  }
