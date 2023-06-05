@@ -8,12 +8,13 @@
         {{-- Includiamo gli assets con la direttiva @vite --}}
         @vite('resources/js/app.js')
     </head>
-    <body>
 
+<header>
+    @include('partials.header')
 
-        {{-- <img src="{{ Vite::asset('resources/img/laravel.png') }}" alt=""> --}}
-
-        @include('partials.header')
+</header>
+<body>
+        @include('partials.jumbotron')
 
         <h1>Main</h1>
         @yield('content')

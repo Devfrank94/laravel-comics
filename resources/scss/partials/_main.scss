@@ -1,10 +1,8 @@
 @use './vars' as *;
 
-.jumbotron{
-    background-image: url(../resources/img/jumbotron.jpg);
-    height: 300px;
-    background-size: cover;
-  }
+header{
+    background-color: $fmwhite;
+}
 
   body{
     background-color: $fmblack;
