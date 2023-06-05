@@ -13,7 +13,7 @@
         @foreach ($head_menu as $item)
             <li>
             <a
-            href="{{route($item['href'])}}" {{Route::currentRouteName() === $item['href'] ? 'active' : ''}}>
+            href="{{route($item['href'])}}" class="{{Route::currentRouteName() === $item['text'] ? 'active' : ''}}">
                 {{$item['text']}}
             </a>
             </li>

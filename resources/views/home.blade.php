@@ -1,3 +1,7 @@
+@php
+  $cards = config('comics');
+@endphp
+
 @extends('layout.main')
 
 @section('title')
@@ -6,24 +10,20 @@ Home
 
 @section('content')
 
-<div class="container d-flex j-cont-cent">
+<div class="container d-flex j-cont-cent  ">
 
     <div id="currseries">current series</div>
 
-    {{-- <Card v-for="(comic, index) in Comics" :key="index" :name="comic.series" :img="comic.thumb" /> --}}
-
+        @foreach ($cards as $card)
+        <div class="card al-item-cent">
+            <img src="{{$card['thumb']}}" alt="">
+            <span>{{$card['title']}}</span>
+        </div>
+        @endforeach
 
     <span class="load-blue">load more</span>
 
   </div>
-
-
-
-
-
-
-
-
 
 
 @endsection

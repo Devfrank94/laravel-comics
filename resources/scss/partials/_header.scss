@@ -14,8 +14,7 @@ header{
         a{
           display: inline-block;
           margin: 0 .6rem;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
+          padding: 1rem .3rem;
           text-transform: uppercase;
           color: $fmblack;
           font-size: .7rem;
@@ -24,11 +23,12 @@ header{
             transition: all .3s;
             border-bottom: 2px solid $fmcyan;
             color: $fmcyan;
-          &.active{
-            background-color: $fmcyan;
-            color: $fmcyan;
-          }
         }
+    }
+    .active{
+        background-color: $fmcyan;
+        color: $fmwhite;
+        border-radius: 10px 0 10px 0;
       }
     }
 }

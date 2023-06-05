@@ -3,7 +3,7 @@
 return [
 'header_menu' => [
     [
-    'href' => "home",
+    'href' => "characters",
     'text' => "characters"
     ],
     [

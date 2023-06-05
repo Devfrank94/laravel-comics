@@ -19,7 +19,7 @@
     </div>
 
     <div class="background-center">
-        <div class="container d-flex j-cont-bet">
+        <div class="container d-flex j-cont-bet no-wrap">
             <div class="categories d-flex">
                     @foreach ($menu_footer as $menu_col)
                         <div class="col">
