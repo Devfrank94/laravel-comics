@@ -1,6 +1,6 @@
 @php
-  $menu_footer = config('menus.footer_menu');
-
+    $menu_footer = config('menus.footer_menu');
+    $menu_social = config('menus.social_menu');
 @endphp
 
 <footer>
@@ -59,27 +59,24 @@
     </div>
 
 
-    <div class="background-bottom d-flex">
-      <div class="container d-flex j-cont-bet">
-        <div class="foot-bott-left d-flex al-item-cent j-cont-cent">
-          <span>sign-up now!</span>
+    <div class="background-bottom">
+        <div class="container d-flex j-cont-bet al-item-cent">
+            <div class="foot-bott-left d-flex j-cont-cent">
+                <span>sign-up now!</span>
+            </div>
+            <div class="foot-bott-right d-flex al-item-cent j-cont-cent">
+                <span>follow us</span>
+                <nav class="d-flex al-item-cent">
+                    <ul class="d-flex">
+                        @foreach ($menu_social as $icon)
+                        <li>
+                            <a><img src="{{Vite::asset($icon['img'])}}" alt="Social Icon"></a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="foot-bott-right d-flex al-item-cent j-cont-cent">
-          <span>follow us</span>
-          <nav class="d-flex al-item-cent">
-              <ul class="d-flex">
-                {{-- <li v-for="(icon, index) in socialMenu" :key="index">
-                  <a :href="icon.href"><img :src="icon.img"></a>
-                </li> --}}
-              </ul>
-            </nav>
-        </div>
-      </div>
     </div>
-
-
-
-
-
 
 </footer>

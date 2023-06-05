@@ -68,17 +68,19 @@ footer{
 
       .container{
         height: 100%;
+        padding-bottom: 0;
 
         .foot-bott-left{
 
-          span{
-            text-transform: uppercase;
-            color: $fmwhite;
-            border: 2px solid $fmcyan;
-            padding: .5rem;
-            font-size: .8rem;
-            font-weight: 500;
-          }
+        span{
+        text-transform: uppercase;
+        color: $fmwhite;
+        border: 2px solid $fmcyan;
+        padding: .5rem;
+        font-size: .8rem;
+        font-weight: 500;
+        cursor: pointer;
+        }
 
         }
 
@@ -106,6 +108,7 @@ footer{
                 a:hover{
                   transition: all .3s;
                   filter: brightness(50%);
+                  cursor: pointer;
                 }
               }
             }

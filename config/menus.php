@@ -161,5 +161,27 @@ return [
     ]
 ],
 
-
+'social_menu' => [
+    [
+    'href' => "#",
+    'img' => "/resources/img/footer-facebook.png"
+    ],
+    [
+    'href' => "#",
+    'img' => "/resources/img/footer-twitter.png"
+    ],
+    [
+    'href' => "#",
+    'img' => "/resources/img/footer-youtube.png"
+    ],
+    [
+    'href' => "#",
+    'img' => "/resources/img/footer-pinterest.png"
+    ],
+    [
+    'href' => "#",
+    'img' => "/resources/img/footer-periscope.png"
+    ]
+    ]
 ];
+
