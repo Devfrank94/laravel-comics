@@ -1,0 +1,62 @@
+@use './vars' as *;
+
+.jumbotron{
+    background-image: url(../resources/img/jumbotron.jpg);
+    height: 300px;
+    background-size: cover;
+  }
+
+  body{
+    background-color: $fmblack;
+
+  }
+
+  .container{
+
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+
+    .load-blue{
+      color: $fmwhite;
+      background-color: $fmcyan;
+      padding: .6rem 2.2rem;
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+
+    .card{
+      width: calc(100% / 6);
+      margin-top: 2.5rem;
+      padding: 0 10px;
+      color: $fmwhite;
+
+      img{
+          width: 100%;
+          aspect-ratio: 2 / 3;
+          margin-bottom: .4rem;
+      }
+
+    }
+
+    #currseries{
+      position: absolute;
+      top: -25px;
+      left: 0;
+      background-color: $fmcyan;
+      text-transform: uppercase;
+      color: $fmwhite;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: .6rem;
+    }
+
+
+  }
+
+
+  h2{
+    color: white;
+  }

@@ -1,0 +1,30 @@
+@use './vars' as *;
+
+header{
+    margin: 1rem 0;
+    height: 70px;
+      .logo{
+        min-width: 50px;
+        max-width: 70px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      ul{
+
+        a{
+          display: inline-block;
+          margin: 0 .6rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          text-transform: uppercase;
+          color: $fmblack;
+          font-size: .7rem;
+          font-weight: 700;
+          &:hover,
+          &.active{
+            border-bottom: 3px solid $fmcyan;
+          }
+        }
+      }
+    }
