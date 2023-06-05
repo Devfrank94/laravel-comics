@@ -1,34 +1,21 @@
 @php
+    $cta = config('menus.cta');
     $menu_footer = config('menus.footer_menu');
     $menu_social = config('menus.social_menu');
 @endphp
 
 <footer>
     <div class="background-top">
-      <div class="container">
-        <div class="blue-section d-flex j-cont-bet">
-          <div class="icon-card d-flex al-item-cent j-cont-cent">
-          <img src="/resources/img/buy-comics-digital-comics.png">
-          <span>digital comics</span>
-          </div>
-          <div class="icon-card d-flex al-item-cent j-cont-cent">
-          <img src="../assets/img/buy-comics-merchandise.png">
-          <span>dc merchandise</span>
-          </div>
-          <div class="icon-card d-flex al-item-cent j-cont-cent">
-          <img src="../assets/img/buy-comics-subscriptions.png">
-          <span>subscription</span>
-          </div>
-          <div class="icon-card d-flex al-item-cent j-cont-cent">
-          <img src="../assets/img/buy-comics-shop-locator.png">
-          <span>comic shop locator</span>
-          </div>
-          <div class="icon-card d-flex al-item-cent j-cont-cent">
-          <img src="../assets/img/buy-dc-power-visa.svg">
-          <span>dc power visa</span>
-          </div>
+        <div class="container">
+            <div class="blue-section d-flex j-cont-bet">
+                @foreach ($cta as $item)
+                    <div class="icon-card d-flex al-item-cent j-cont-cent">
+                        <img src="{{Vite::asset('/resources/img/' . $item['img'])}}" alt="">
+                        <span>{{$item['text']}}</span>
+                    </div>
+                @endforeach
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="background-center">
