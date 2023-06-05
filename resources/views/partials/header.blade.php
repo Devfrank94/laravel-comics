@@ -4,7 +4,7 @@
 @endphp
 
 <div class="container">
-    <header class="d-flex j-cont-bet al-item-cent pb-1">
+    <header class="d-flex j-cont-bet al-item-cent">
       <div class="logo">
         <img src="{{ Vite::asset('public/dc-logo.png') }}" alt="DC Logo">
       </div>

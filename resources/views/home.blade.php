@@ -5,5 +5,25 @@ Home
 @endsection
 
 @section('content')
-<h1>Home</h1>
+
+<div class="container d-flex j-cont-cent">
+
+    <div id="currseries">current series</div>
+
+    {{-- <Card v-for="(comic, index) in Comics" :key="index" :name="comic.series" :img="comic.thumb" /> --}}
+
+
+    <span class="load-blue">load more</span>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
 @endsection

@@ -10,7 +10,6 @@ header{
   }
 
   .container{
-
     position: relative;
     flex-wrap: wrap;
     padding-bottom: 2rem;
@@ -23,6 +22,7 @@ header{
       font-size: .7rem;
       font-weight: 600;
       margin-top: 3rem;
+      cursor: pointer;
     }
 
     .card{
@@ -41,7 +41,7 @@ header{
 
     #currseries{
       position: absolute;
-      top: -25px;
+      top: -22px;
       left: 0;
       background-color: $fmcyan;
       text-transform: uppercase;
