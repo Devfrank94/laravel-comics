@@ -16,7 +16,7 @@ Home
 
         @foreach ($cards as $card)
         <div class="card al-item-cent">
-            <a href="{{route('info-details')}}">
+            <a href="{{route('info-details', ['slug' => $card['slug']])}}">
             <img src="{{$card['thumb']}}" alt="">
             <span>{{$card['title']}}</span>
             </a>

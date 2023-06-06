@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('home');
 })->name('characters');
 
-Route::get('/info-details', function () {
-    return view('info-details');
+Route::get('/info-details/{slug}', function ($slug) {
+
+    $cards = config('comics');
+    $card_array = array_filter($cards, fn($item) => $item['slug'] === $slug);
+    $card = $card_array;
+    return view('info-details', compact('card'));
 })->name('info-details');
 
 Route::get('/comics', function () {
