@@ -38,6 +38,13 @@ header{
         z-index: 1;
       }
 
+      a{
+        color: $fmwhite;
+        &:hover{
+            color: $fmcyan;
+        }
+      }
+
       img{
           width: 100%;
           aspect-ratio: 2 / 3;

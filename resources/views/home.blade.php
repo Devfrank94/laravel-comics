@@ -16,8 +16,10 @@ Home
 
         @foreach ($cards as $card)
         <div class="card al-item-cent">
+            <a href="{{route('info-details')}}">
             <img src="{{$card['thumb']}}" alt="">
             <span>{{$card['title']}}</span>
+            </a>
         </div>
         @endforeach
 

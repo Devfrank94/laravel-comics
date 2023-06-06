@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 })->name('characters');
 
+Route::get('/info-details', function () {
+    return view('info-details');
+})->name('info-details');
+
 Route::get('/comics', function () {
     return view('home');
 })->name('comics');
