@@ -1,0 +1,13 @@
+@use './vars' as *;
+
+main{
+    height: 500px;
+    background-color: $fmblack;
+
+    .sec-blue{
+        height: 70px;
+        background-color: $fmcyan;
+    }
+}
+
+

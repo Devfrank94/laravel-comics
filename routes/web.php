@@ -21,7 +21,7 @@ Route::get('/info-details/{slug}', function ($slug) {
 
     $cards = config('comics');
     $card_array = array_filter($cards, fn($item) => $item['slug'] === $slug);
-    $card = $card_array;
+    $card = $card_array[array_key_first($card_array)];
     return view('info-details', compact('card'));
 })->name('info-details');
 
