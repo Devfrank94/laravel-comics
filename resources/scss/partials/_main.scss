@@ -30,6 +30,13 @@ header{
       margin-top: 2.5rem;
       padding: 0 10px;
       color: $fmwhite;
+      cursor: pointer;
+      transition: all .3s ease-in;
+      &:hover{
+          transition: all .3s ease-out;
+        transform: scale(1.15);
+        z-index: 1;
+      }
 
       img{
           width: 100%;
