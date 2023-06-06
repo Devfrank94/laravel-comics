@@ -15,7 +15,7 @@
             <a
             href="{{route($item['href'])}}" class="{{Route::currentRouteName() === $item['text'] ? 'active' : ''}}">
                 {{$item['text']}}
-            </a>
+            </a> 
             </li>
         @endforeach
         </ul>
