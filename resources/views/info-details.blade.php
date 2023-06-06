@@ -7,7 +7,7 @@
 @section('content')
 
 {{-- @dd($card); --}}
-@dump($card);
+{{-- @dump($card); --}}
 <main>
     <div class="sec-blue d-flex j-cont-cent al-item-cent">
         <h2>Info Details</h2>
@@ -23,8 +23,9 @@
             <h4>Uscita: {{$card['sale_date']}}</h4>
             <h4>Tipo: {{$card['type']}}</h4>
             <p>Descrizione: {{$card['description']}}</p>
-
         </div>
+
+        <a href="{{route('comics')}}"><button>Torna indietro</button></a>
     </div>
 
 </main>
