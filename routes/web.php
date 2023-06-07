@@ -21,6 +21,10 @@ Route::get('/info-details/{slug}', function ($slug) {
 
     $cards = config('comics');
     $card_array = array_filter($cards, fn($item) => $item['slug'] === $slug);
+
+    // redirect se slug errato
+    if(empty($card_array)) return to_route('comics');
+
     $card = $card_array[array_key_first($card_array)];
     return view('info-details', compact('card'));
 })->name('info-details');

@@ -30,12 +30,4 @@
 
 </main>
 
-
-
-
-
-
-
-
-
 @endsection
